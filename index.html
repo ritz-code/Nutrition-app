@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="main-nav" id="main-nav">
+            <div class="logo">
+                <a href="index.html">Healthbites</a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Nutrition Content </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="picture">
+            <img src="sass/veg.jpg" alt="Bowl of veggies">
+        </div>
+        <div class="info-container">
+            <div class="input-container">
+                <input type="text" id="sentence" name="sentence" maxlength="100" placeholder="Type food name..">
+                <button type="button" id="goBtn">Nutritional Value</button>
+            </div>
+            <div class="nutri-data hide" id="nutri-data">
+                <div class="calories" id="calories">307 Calories</div>
+                
+                <label class="labels label1">Limit These</label>
+                <p>Fat</p>
+                <div class=" content container" id="container1">
+                </div>
+
+                <p>Carbs</p>
+                <div class="container content" id="container2">
+                </div>
+
+                <p>Cholesterol</p>
+                <div class="content container" id="container3">
+                </div>
+
+                <label class="labels label2">Get Enough Of These</label>
+                <p>Iron</p>
+                <div class="content container" id="container4">
+                </div>
+
+                <p>Protein</p>
+                <div class="content container" id="container5">
+                </div>
+
+                <p>Fiber</p>
+                <div class="content container" id="container6">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav .logo {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.main-nav .logo a {
+  font-family: "Train One", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.main-nav .hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  margin: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.main-nav .hamburger-menu:hover {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #999;
+          box-shadow: 0.2rem 0.2rem 0.5rem #999;
+}
+
+.main-nav .hamburger-menu .bar {
+  width: 2rem;
+  height: 3px;
+  background-color: #222;
+  border-radius: 5px;
+  position: relative;
+}
+
+.main-nav .hamburger-menu .bar::before,
+.main-nav .hamburger-menu .bar::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  background-color: #222;
+  position: absolute;
+}
+
+.main-nav .hamburger-menu .bar::before {
+  top: -0.8rem;
+}
+
+.main-nav .hamburger-menu .bar::after {
+  top: 0.8rem;
+}
+
+.main-nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  top: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transform: translateX(30rem);
+          transform: translateX(30rem);
+  -webkit-box-shadow: -0.5rem 0 1rem #777;
+          box-shadow: -0.5rem 0 1rem #777;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.main-nav .nav-list li {
+  padding: 1rem;
+  margin: 2rem 4rem;
+  list-style-type: none;
+}
+
+.main-nav .nav-list li a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #222;
+}
+
+.picture {
+  width: 100vw;
+  background: cover;
+}
+
+.picture img {
+  height: 15rem;
+  width: 100vw;
+}
+
+.main-nav.open .bar {
+  background-color: transparent;
+}
+
+.main-nav.open .bar::before {
+  top: 0rem;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.main-nav.open .bar::after {
+  top: 0rem;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.main-nav.open .nav-list {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.info-container {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-container #sentence {
+  width: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.3rem #222;
+          box-shadow: 0.2rem 0.2rem 0.3rem #222;
+}
+
+.input-container #goBtn {
+  padding: 0.5rem;
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.3rem #222;
+          box-shadow: 0.2rem 0.2rem 0.3rem #222;
+}
+
+.input-container #goBtn:hover {
+  color: green;
+  background-color: #fff;
+}
+
+.nutri-data {
+  /*border: 2px solid black;*/
+  margin: 2rem;
+  height: 20rem;
+}
+
+.nutri-data .calories {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.nutri-data .container {
+  margin: 0 auto;
+  width: 80%;
+  /* Full width */
+  background-color: #ddd;
+  /* Grey background */
+}
+
+.nutri-data .content {
+  text-align: right;
+  /* Right-align text */
+  color: white;
+  /* White text color */
+}
+
+.nutri-data .labels {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  display: inline block;
+}
+
+.nutri-data .label1 {
+  color: hotpink;
+}
+
+.nutri-data .label2 {
+  color: green;
+  margin-top: 1rem;
+}
+
+.nutri-data .pink {
+  background-color: hotpink;
+}
+
+.nutri-data .green {
+  background-color: green;
+}
+
+.nutri-data.hide {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .logo {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .logo a {
+    font-size: 0.5rem;
+  }
+  .picture img {
+    height: 5rem;
+  }
+  .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1rem;
+    height: 1rem;
+  }
+  .hamburger-menu .bar {
+    width: 0.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
